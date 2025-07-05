@@ -46,7 +46,7 @@ nav,
 nav {
     justify-content: space-around;
     align-items: center;
-    height: 15vh;
+    height: 10vh;
 }
 
 .nav-links {
@@ -60,9 +60,9 @@ a {
 }
 
 a:hover {
-    color: rgb(95, 95, 95);
-    text-decoration: underline;
-    text-underline-offset: 1.5rem;
+    color: rgb(9, 109, 0);
+    /* text-decoration: underline;
+    text-underline-offset: 1.5rem; */
 }
 
 p {
@@ -76,6 +76,18 @@ p {
 
 .logo:hover {
     cursor: default;
+}
+
+.nav-section {
+    padding: 15px 50px 15px 50px;
+    border: 2px solid rgba(0, 0, 0, 0.336);
+    border-radius: 50px;
+    position: fixed;
+    /* top: 0;
+    left: 0;
+    width: 100%; */
+    z-index: 1000;
+    background-color: white;
 }
 
 /* SECTIONS */
@@ -151,6 +163,9 @@ section {
     height: 2.5rem;
     border-radius: 2rem;
     border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .btn-color-1 {
@@ -162,7 +177,12 @@ section {
     background-color: rgb(228, 228, 228);
 }
 
-.btn-color-2:hover,
+.btn-color-2:hover {
+    color: black;
+    background: rgb(195, 218, 193);
+    cursor: pointer;
+}
+
 .btn-color-1:hover {
     background: rgb(157, 175, 155);
     cursor: pointer;
@@ -256,7 +276,7 @@ section {
 /* CONTACT ME SECTION */
 
 #contact {
-    /* margin: 0 20vh 0 20vh; */
+    height: 400px;
     justify-content: center;
     text-align: center;
     align-self: center;
@@ -284,3 +304,8 @@ section {
     margin:1rem 0.5rem 1rem 0.5rem ;
 }
 
+#experience,
+#skill,
+#contact {
+  scroll-margin-top: 200px; /* match your navbar height */
+}

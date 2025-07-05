@@ -23,6 +23,12 @@
         font-size: 2rem;
    }
 
+    #experience,
+    #skill,
+    #contact {
+        scroll-margin-top: 100px; /* match your navbar height */
+    }
+
 }
 
 @media (max-width:500px) {
